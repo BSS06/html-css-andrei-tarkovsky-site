@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="All seven feature films by Andrei Tarkovsky with summaries, runtimes, themes, full films and official trailers.">
+  <meta name="theme-color" content="#dadcd5">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;600&family=Spectral:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap">
+  <link rel="stylesheet" href="../css/style.css">
+  <title>Films | Andrei Tarkovsky Films</title>
+</head>
+<body>
+  <a class="sari-la-continut" href="#continut">Skip to content</a>
+  <header class="antet" id="antet">
+    <a class="sigla" href="../index.html">Andrei Tarkovsky</a>
+    <nav class="navigare" id="navigare" aria-label="Main">
+      <a href="../index.html">Home</a>
+      <a href="films.html" aria-current="page">Films</a>
+      <a href="reservations.html">Reservations</a>
+    </nav>
+    <button class="comutator-meniu" id="comutator-meniu" type="button" aria-label="Open menu" aria-controls="navigare" aria-expanded="false"><span></span><span></span></button>
+  </header>
+  <main id="continut">
+    <section class="antet-pagina">
+      <h1>Films</h1>
+      <p>Every feature Tarkovsky directed, in order. Five of them are free to watch in full on Mosfilm's official channel, with English subtitles; for the two films made abroad you can watch the official trailer.</p>
+    </section>
+    <section class="unelte-arhiva" aria-label="Search and filter films">
+      <div class="cautare">
+        <label for="cautare-film">Search</label>
+        <input id="cautare-film" type="search" placeholder="Title, year or theme" autocomplete="off">
+      </div>
+      <div class="filtre" role="group" aria-label="Filter by theme">
+        <button class="filtru" type="button" data-filtru="toate" aria-pressed="true">All</button>
+        <button class="filtru" type="button" data-filtru="memorie" aria-pressed="false">Memory</button>
+        <button class="filtru" type="button" data-filtru="credinta" aria-pressed="false">Faith</button>
+        <button class="filtru" type="button" data-filtru="istorie" aria-pressed="false">History and war</button>
+        <button class="filtru" type="button" data-filtru="stiintifico" aria-pressed="false">Science fiction</button>
+        <button class="filtru" type="button" data-filtru="exil" aria-pressed="false">Exile</button>
+      </div>
+      <p class="numar-filme" id="numar-filme" aria-live="polite"></p>
+    </section>
+    <div class="lista-filme" id="lista-filme">
+      <article class="film" id="ivans-childhood" data-categorie="memorie istorie" data-cautare="ivan's childhood ivanovo detstvo 1962 war memory dream childhood">
+        <p class="film-an" aria-hidden="true">1962</p>
+        <div class="film-text">
+          <h2>Ivan's Childhood</h2>
+          <p class="film-original" lang="ru">Иваново детство</p>
+          <p>Twelve-year-old Ivan, orphaned by the war, works as a scout behind German lines. Tarkovsky's debut cuts between the boy's sunlit dreams and the flooded, burnt landscape of the front, and won the Golden Lion in Venice.</p>
+          <dl class="film-date">
+            <div><dt>Year</dt><dd>1962</dd></div>
+            <div><dt>Runtime</dt><dd>95 min</dd></div>
+            <div><dt>Country</dt><dd>USSR</dd></div>
+            <div><dt>Themes</dt><dd>Memory, war</dd></div>
+          </dl>
+        </div>
+        <div class="film-video">
+          <div class="ecran" data-youtube="6Lnb1bI0VIk" data-titlu="Ivan's Childhood">
+            <img class="ecran-coperta" src="https://i.ytimg.com/vi/6Lnb1bI0VIk/hqdefault.jpg" alt="Still from Ivan's Childhood" loading="lazy">
+            <button class="ecran-pornire" type="button" aria-label="Play Ivan's Childhood, full film"><span class="ecran-iconita" aria-hidden="true"></span>Play full film</button>
+          </div>
+          <p class="ecran-sursa">Full film, Mosfilm official channel. <a href="https://www.youtube.com/watch?v=6Lnb1bI0VIk" target="_blank" rel="noopener">Open on YouTube</a></p>
+        </div>
+      </article>
+      <article class="film" id="andrei-rublev" data-categorie="credinta istorie" data-cautare="andrei rublev andrey rublyov 1966 epic art faith icon painter history middle ages">
+        <p class="film-an" aria-hidden="true">1966</p>
+        <div class="film-text">
+          <h2>Andrei Rublev</h2>
+          <p class="film-original" lang="ru">Андрей Рублёв</p>
+          <p>The life of the fifteenth-century icon painter told in eight episodes of famine, raids and doubt. Shot in black and white, the film opens into colour only at the very end, on Rublev's icons. Censored for years, it was first cut from a longer version titled The Passion According to Andrei.</p>
+          <dl class="film-date">
+            <div><dt>Year</dt><dd>1966</dd></div>
+            <div><dt>Runtime</dt><dd>183 min</dd></div>
+            <div><dt>Country</dt><dd>USSR</dd></div>
+            <div><dt>Themes</dt><dd>Faith, art, history</dd></div>
+          </dl>
+        </div>
+        <div class="film-video">
+          <div class="comutator-video" role="group" aria-label="Choose video">
+            <button type="button" data-mod="film" aria-pressed="true">Full film</button>
+            <button type="button" data-mod="clip" aria-pressed="false">Short clip</button>
+          </div>
+          <div class="ecran" data-youtube="je75FDjcUP4" data-titlu="Andrei Rublev">
+            <img class="ecran-coperta" src="../images/andrei-rublev-1.jpg" alt="Andrei Rublev standing before an iconostasis" loading="lazy">
+            <button class="ecran-pornire" type="button" aria-label="Play Andrei Rublev, full film"><span class="ecran-iconita" aria-hidden="true"></span>Play full film</button>
+          </div>
+          <div class="ecran ecran-local" hidden>
+            <video controls playsinline preload="none" poster="../images/andrei-rublev-2.jpg">
+              <source src="../video/andrei-rublev-clip.mp4" type="video/mp4">
+            </video>
+          </div>
+          <p class="ecran-sursa">Full film, Mosfilm official channel. <a href="https://www.youtube.com/watch?v=je75FDjcUP4" target="_blank" rel="noopener">Open on YouTube</a></p>
+        </div>
+      </article>
+      <article class="film" id="solaris" data-categorie="stiintifico memorie" data-cautare="solaris solyaris 1972 science fiction space ocean planet lem conscience memory guilt">
+        <p class="film-an" aria-hidden="true">1972</p>
+        <div class="film-text">
+          <h2>Solaris</h2>
+          <p class="film-original" lang="ru">Солярис</p>
+          <p>Psychologist Kris Kelvin arrives at a space station orbiting an ocean planet that gives shape to the crew's memories, including his wife Hari, who died years before. Based on the novel by Stanisław Lem, it won the Grand Prix at Cannes.</p>
+          <dl class="film-date">
+            <div><dt>Year</dt><dd>1972</dd></div>
+            <div><dt>Runtime</dt><dd>167 min</dd></div>
+            <div><dt>Country</dt><dd>USSR</dd></div>
+            <div><dt>Themes</dt><dd>Science fiction, memory</dd></div>
+          </dl>
+        </div>
+        <div class="film-video">
+          <div class="ecran" data-youtube="Z8ZhQPaw4rE" data-titlu="Solaris">
+            <img class="ecran-coperta" src="https://i.ytimg.com/vi/Z8ZhQPaw4rE/hqdefault.jpg" alt="Still from Solaris" loading="lazy">
+            <button class="ecran-pornire" type="button" aria-label="Play Solaris, full film"><span class="ecran-iconita" aria-hidden="true"></span>Play full film</button>
+          </div>
+          <p class="ecran-sursa">Full film, Mosfilm official channel. <a href="https://www.youtube.com/watch?v=Z8ZhQPaw4rE" target="_blank" rel="noopener">Open on YouTube</a></p>
+        </div>
+      </article>
+      <article class="film" id="mirror" data-categorie="memorie" data-cautare="mirror zerkalo the mirror 1975 memory family poetry autobiography childhood arseny tarkovsky">
+        <p class="film-an" aria-hidden="true">1975</p>
+        <div class="film-text">
+          <h2>Mirror</h2>
+          <p class="film-original" lang="ru">Зеркало</p>
+          <p>A loosely autobiographical film built from childhood memories, dreams, newsreel and poems written and read by the director's father, Arseny Tarkovsky. Margarita Terekhova plays both the narrator's mother and his wife.</p>
+          <dl class="film-date">
+            <div><dt>Year</dt><dd>1975</dd></div>
+            <div><dt>Runtime</dt><dd>107 min</dd></div>
+            <div><dt>Country</dt><dd>USSR</dd></div>
+            <div><dt>Themes</dt><dd>Memory, family</dd></div>
+          </dl>
+        </div>
+        <div class="film-video">
+          <div class="ecran" data-youtube="NrMINC5xjMs" data-titlu="Mirror">
+            <img class="ecran-coperta" src="../images/mirror-1.jpg" alt="A woman levitating above a bed in Mirror" loading="lazy">
+            <button class="ecran-pornire" type="button" aria-label="Play Mirror, full film"><span class="ecran-iconita" aria-hidden="true"></span>Play full film</button>
+          </div>
+          <p class="ecran-sursa">Full film, Mosfilm official channel. <a href="https://www.youtube.com/watch?v=NrMINC5xjMs" target="_blank" rel="noopener">Open on YouTube</a></p>
+        </div>
+      </article>
+      <article class="film" id="stalker" data-categorie="credinta stiintifico" data-cautare="stalker 1979 zone room desire faith science fiction strugatsky roadside picnic">
+        <p class="film-an" aria-hidden="true">1979</p>
+        <div class="film-text">
+          <h2>Stalker</h2>
+          <p class="film-original" lang="ru">Сталкер</p>
+          <p>A guide known as the Stalker leads a writer and a professor through the Zone, a forbidden wasteland said to hold a room that grants a person's deepest wish. Written by Arkady and Boris Strugatsky, loosely after their novel Roadside Picnic.</p>
+          <dl class="film-date">
+            <div><dt>Year</dt><dd>1979</dd></div>
+            <div><dt>Runtime</dt><dd>161 min</dd></div>
+            <div><dt>Country</dt><dd>USSR</dd></div>
+            <div><dt>Themes</dt><dd>Faith, science fiction</dd></div>
+          </dl>
+        </div>
+        <div class="film-video">
+          <div class="comutator-video" role="group" aria-label="Choose video">
+            <button type="button" data-mod="film" aria-pressed="true">Full film</button>
+            <button type="button" data-mod="clip" aria-pressed="false">Short clip</button>
+          </div>
+          <div class="ecran" data-youtube="Q3hBLv-HLEc" data-titlu="Stalker">
+            <img class="ecran-coperta" src="../images/stalker-1.jpg" alt="The Room's threshold in Stalker, a field of sand dunes inside a ruined hall" loading="lazy">
+            <button class="ecran-pornire" type="button" aria-label="Play Stalker, full film"><span class="ecran-iconita" aria-hidden="true"></span>Play full film</button>
+          </div>
+          <div class="ecran ecran-local" hidden>
+            <video controls playsinline preload="none" poster="../images/stalker-3.jpg">
+              <source src="../video/stalker-clip.mp4" type="video/mp4">
+            </video>
+          </div>
+          <p class="ecran-sursa">Full film, Mosfilm official channel. <a href="https://www.youtube.com/watch?v=Q3hBLv-HLEc" target="_blank" rel="noopener">Open on YouTube</a></p>
+        </div>
+      </article>
+      <article class="film" id="nostalghia" data-categorie="exil credinta" data-cautare="nostalghia nostalgia 1983 exile italy homesickness candle poet faith">
+        <p class="film-an" aria-hidden="true">1983</p>
+        <div class="film-text">
+          <h2>Nostalghia</h2>
+          <p class="film-original" lang="it">Nostalghia</p>
+          <p>A Russian poet travelling through Italy to research an eighteenth-century composer meets Domenico, a recluse who asks him to carry a lit candle across a drained thermal pool. Tarkovsky's first film made outside the Soviet Union.</p>
+          <dl class="film-date">
+            <div><dt>Year</dt><dd>1983</dd></div>
+            <div><dt>Runtime</dt><dd>125 min</dd></div>
+            <div><dt>Country</dt><dd>Italy, USSR</dd></div>
+            <div><dt>Themes</dt><dd>Exile, faith</dd></div>
+          </dl>
+        </div>
+        <div class="film-video">
+          <div class="ecran" data-youtube="QDax5tf2aqo" data-titlu="Nostalghia">
+            <img class="ecran-coperta" src="https://i.ytimg.com/vi/QDax5tf2aqo/hqdefault.jpg" alt="Still from the Nostalghia trailer" loading="lazy">
+            <button class="ecran-pornire" type="button" aria-label="Play the Nostalghia trailer"><span class="ecran-iconita" aria-hidden="true"></span>Play trailer</button>
+          </div>
+          <p class="ecran-sursa">Official trailer, Kino Lorber. <a href="https://www.youtube.com/watch?v=QDax5tf2aqo" target="_blank" rel="noopener">Open on YouTube</a></p>
+        </div>
+      </article>
+      <article class="film" id="the-sacrifice" data-categorie="credinta exil" data-cautare="the sacrifice offret 1986 faith apocalypse war sweden gotland">
+        <p class="film-an" aria-hidden="true">1986</p>
+        <div class="film-text">
+          <h2>The Sacrifice</h2>
+          <p class="film-original" lang="sv">Offret</p>
+          <p>On his birthday, a retired actor hears that nuclear war has begun and vows to give up everything he loves if the catastrophe can be undone. Tarkovsky's last film, shot in Sweden, won the Grand Prix at Cannes in the year of his death.</p>
+          <dl class="film-date">
+            <div><dt>Year</dt><dd>1986</dd></div>
+            <div><dt>Runtime</dt><dd>149 min</dd></div>
+            <div><dt>Country</dt><dd>Sweden</dd></div>
+            <div><dt>Themes</dt><dd>Faith, exile</dd></div>
+          </dl>
+        </div>
+        <div class="film-video">
+          <div class="ecran" data-youtube="sPIU0V9sjwM" data-titlu="The Sacrifice">
+            <img class="ecran-coperta" src="https://i.ytimg.com/vi/sPIU0V9sjwM/hqdefault.jpg" alt="Still from The Sacrifice trailer" loading="lazy">
+            <button class="ecran-pornire" type="button" aria-label="Play The Sacrifice trailer"><span class="ecran-iconita" aria-hidden="true"></span>Play trailer</button>
+          </div>
+          <p class="ecran-sursa">Official trailer, MUBI. <a href="https://www.youtube.com/watch?v=sPIU0V9sjwM" target="_blank" rel="noopener">Open on YouTube</a></p>
+        </div>
+      </article>
+    </div>
+    <section class="niciun-rezultat" id="niciun-rezultat" hidden>
+      <h2>No films match your search</h2>
+      <p>Try another title, a year such as 1975, or choose “All” to see every film.</p>
+      <button class="buton buton-contur" id="reseteaza-filtre" type="button">Show all films</button>
+    </section>
+    <section class="sectiune galerie-sectiune" aria-labelledby="titlu-galerie">
+      <h2 id="titlu-galerie">More stills</h2>
+      <div class="galerie">
+        <a class="galerie-element galerie-lat" href="../images/stalker-3.jpg" data-titlu="Stalker, 1979"><img src="../images/stalker-3.jpg" alt="The Stalker and the professor in the overgrown Zone" loading="lazy"></a>
+        <a class="galerie-element" href="../images/stalker-2.jpg" data-titlu="Stalker, 1979"><img src="../images/stalker-2.jpg" alt="The writer wearing a crown of thorns in Stalker" loading="lazy"></a>
+        <a class="galerie-element" href="../images/andrei-rublev-2.jpg" data-titlu="Andrei Rublev, 1966"><img src="../images/andrei-rublev-2.jpg" alt="A hooded monk by the river in Andrei Rublev" loading="lazy"></a>
+        <a class="galerie-element galerie-lat" href="../images/andrei-rublev-3.jpg" data-titlu="Andrei Rublev, 1966"><img src="../images/andrei-rublev-3.jpg" alt="Two monks inside a ruined church in Andrei Rublev" loading="lazy"></a>
+        <a class="galerie-element galerie-lat" href="../images/mirror-2.jpg" data-titlu="Mirror, 1975"><img src="../images/mirror-2.jpg" alt="A barn burning at dusk in Mirror" loading="lazy"></a>
+        <a class="galerie-element" href="../images/mirror-3.jpg" data-titlu="Mirror, 1975"><img src="../images/mirror-3.jpg" alt="A woman sitting on a fence in a field in Mirror" loading="lazy"></a>
+      </div>
+    </section>
+  </main>
+  <footer class="subsol">
+    <div>
+      <p class="subsol-titlu">Andrei Tarkovsky Films</p>
+      <p>A student information project about the films of Andrei Tarkovsky.</p>
+    </div>
+    <nav aria-label="Footer">
+      <a href="../index.html">Home</a>
+      <a href="reservations.html">Reservations</a>
+    </nav>
+    <p class="subsol-drepturi">© <span id="anul-curent">2026</span> Andrei Tarkovsky Films</p>
+  </footer>
+  <button class="sus" id="sus" type="button" aria-label="Back to top">↑</button>
+  <div class="notificare" id="notificare" role="status" aria-live="polite"></div>
+  <script src="../js/main.js"></script>
+</body>
+</html>

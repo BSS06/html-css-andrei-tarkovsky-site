@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Book a screening of a Tarkovsky film, find contacts and useful links, and read about the project's scenarios, risks and costs.">
+  <meta name="theme-color" content="#dadcd5">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;600&family=Spectral:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap">
+  <link rel="stylesheet" href="../css/style.css">
+  <title>Reservations | Andrei Tarkovsky Films</title>
+</head>
+<body>
+  <a class="sari-la-continut" href="#continut">Skip to content</a>
+  <header class="antet" id="antet">
+    <a class="sigla" href="../index.html">Andrei Tarkovsky</a>
+    <nav class="navigare" id="navigare" aria-label="Main">
+      <a href="../index.html">Home</a>
+      <a href="films.html">Films</a>
+      <a href="reservations.html" aria-current="page">Reservations</a>
+    </nav>
+    <button class="comutator-meniu" id="comutator-meniu" type="button" aria-label="Open menu" aria-controls="navigare" aria-expanded="false"><span></span><span></span></button>
+  </header>
+  <main id="continut">
+    <section class="antet-pagina">
+      <h1>Reservations</h1>
+      <p>Book seats for a screening at a cinematheque, a cultural centre or a university film club. Reservations are saved in this browser, so you can review or clear them at any time.</p>
+    </section>
+    <section class="sectiune rezervare" aria-label="Reservation form and contacts">
+      <form class="formular" id="formular-rezervare" novalidate>
+        <h2>Book a screening</h2>
+        <div class="formular-grila">
+          <div class="camp">
+            <label for="camp-nume">Full name</label>
+            <input id="camp-nume" type="text" name="nume" autocomplete="name" minlength="3" required>
+          </div>
+          <div class="camp">
+            <label for="camp-email">Email</label>
+            <input id="camp-email" type="email" name="email" autocomplete="email" placeholder="name@example.com" required>
+          </div>
+          <div class="camp">
+            <label for="camp-film">Film</label>
+            <select id="camp-film" name="film" required>
+              <option value="">Choose a film</option>
+              <option>Ivan's Childhood</option>
+              <option>Andrei Rublev</option>
+              <option>Solaris</option>
+              <option>Mirror</option>
+              <option>Stalker</option>
+              <option>Nostalghia</option>
+              <option>The Sacrifice</option>
+            </select>
+          </div>
+          <div class="camp">
+            <label for="camp-data">Screening date</label>
+            <input id="camp-data" type="date" name="data" required>
+          </div>
+          <div class="camp">
+            <label for="camp-bilete">Tickets</label>
+            <input id="camp-bilete" type="number" name="bilete" min="1" max="10" value="2" inputmode="numeric" required>
+          </div>
+          <div class="camp">
+            <label for="camp-loc">Seat type</label>
+            <select id="camp-loc" name="loc" required>
+              <option>Standard</option>
+              <option>Premium</option>
+              <option>Director's row</option>
+            </select>
+          </div>
+          <div class="camp camp-lat">
+            <label for="camp-mesaj">Notes <span class="optional">(optional)</span></label>
+            <textarea id="camp-mesaj" name="mesaj" rows="4" placeholder="Accessibility needs, preferred time or group details"></textarea>
+          </div>
+        </div>
+        <button class="buton buton-plin" type="submit">Book seats</button>
+        <p class="stare-formular" id="stare-formular" aria-live="polite"></p>
+      </form>
+      <aside class="contacte">
+        <div class="contacte-bloc">
+          <h2>Box office</h2>
+          <ul>
+            <li><a href="tel:+37360123456">+373 60 123 456</a></li>
+            <li><a href="mailto:screenings@example.org">screenings@example.org</a></li>
+          </ul>
+        </div>
+        <div class="contacte-bloc">
+          <h2>Further reading</h2>
+          <ul>
+            <li><a href="https://en.wikipedia.org/wiki/Andrei_Tarkovsky" target="_blank" rel="noopener">Biography on Wikipedia</a></li>
+            <li><a href="https://www.imdb.com/name/nm0001789/" target="_blank" rel="noopener">Tarkovsky on IMDb</a></li>
+            <li><a href="https://letterboxd.com/director/andrei-tarkovsky/" target="_blank" rel="noopener">Tarkovsky on Letterboxd</a></li>
+            <li><a href="https://www.youtube.com/playlist?list=PL7EqAsBxqGgjarBzACNmCNDdr0y0iFu8U" target="_blank" rel="noopener">Mosfilm's Tarkovsky playlist</a></li>
+          </ul>
+        </div>
+      </aside>
+    </section>
+    <section class="sectiune rezervari-salvate" aria-labelledby="titlu-salvate">
+      <div class="rezervari-antet">
+        <h2 id="titlu-salvate">Your reservations</h2>
+        <button class="buton buton-contur" id="sterge-rezervari" type="button">Clear all reservations</button>
+      </div>
+      <div class="lista-rezervari" id="lista-rezervari"></div>
+    </section>
+    <section class="sectiune parcurs" aria-labelledby="titlu-parcurs">
+      <h2 id="titlu-parcurs">From first visit to booked seat</h2>
+      <ol class="parcurs-lista">
+        <li><h3>Home</h3><p>The visitor learns who Tarkovsky was and what the site offers.</p></li>
+        <li><h3>Films</h3><p>They search, filter, read the summaries and watch a film or trailer.</p></li>
+        <li><h3>Reservation</h3><p>They fill in the form, check the contacts and open further reading.</p></li>
+        <li><h3>Confirmation</h3><p>The reservation is checked, saved in the browser and listed without reloading the page.</p></li>
+      </ol>
+    </section>
+    <section class="sectiune scenarii" aria-labelledby="titlu-scenarii">
+      <h2 id="titlu-scenarii">Scenarios</h2>
+      <div class="file" role="tablist" aria-label="Scenarios">
+        <button class="fila" id="fila-reusit" type="button" role="tab" aria-selected="true" aria-controls="panou-reusit">Successful visit</button>
+        <button class="fila" id="fila-alternativ" type="button" role="tab" aria-selected="false" aria-controls="panou-alternativ" tabindex="-1">When something fails</button>
+        <button class="fila" id="fila-blocare" type="button" role="tab" aria-selected="false" aria-controls="panou-blocare" tabindex="-1">Staying responsive</button>
+      </div>
+      <div class="panou" id="panou-reusit" role="tabpanel" aria-labelledby="fila-reusit" tabindex="0">
+        <p>The home page loads quickly, the menu stays visible, the films page shows each film in a clear block, and external links open in a new tab so the visitor never loses their place on the site.</p>
+      </div>
+      <div class="panou" id="panou-alternativ" role="tabpanel" aria-labelledby="fila-alternativ" tabindex="0" hidden>
+        <p>If an external link or a video is unavailable, the rest of the site keeps working. A missing image is replaced with a neutral placeholder, and every embedded video has an “Open on YouTube” link as a fallback.</p>
+      </div>
+      <div class="panou" id="panou-blocare" role="tabpanel" aria-labelledby="fila-blocare" tabindex="0" hidden>
+        <p>The site uses no heavy libraries, loads images lazily, loads a YouTube player only after the visitor presses play, and explains every form error next to the form instead of reloading the page.</p>
+      </div>
+    </section>
+    <section class="sectiune riscuri" aria-labelledby="titlu-riscuri">
+      <h2 id="titlu-riscuri">Risks</h2>
+      <dl class="riscuri-lista">
+        <div><dt>Team availability <span>internal</span></dt><dd>Illness, motivation or different visions can delay the work or make the design inconsistent.</dd></div>
+        <div><dt>Code and assets <span>technical</span></dt><dd>Disorganised code, heavy images or a poor colour palette can hurt speed and readability.</dd></div>
+        <div><dt>Hosting and requirements <span>external</span></dt><dd>University infrastructure, unavailable servers or changing requirements can affect how the site is presented.</dd></div>
+        <div><dt>User acceptance <span>audience</span></dt><dd>An overloaded design or missing features can lower the interest of the target audience.</dd></div>
+      </dl>
+    </section>
+    <section class="sectiune costuri" aria-labelledby="titlu-costuri">
+      <h2 id="titlu-costuri">Resources and costs</h2>
+      <p class="sectiune-nota">A theoretical estimate for a student project, in Moldovan lei (MDL).</p>
+      <table class="tabel-costuri">
+        <tbody>
+          <tr><th scope="row">Estimated total work</th><td>100 hours</td></tr>
+          <tr><th scope="row">Hypothetical labour cost</th><td>6,000 MDL</td></tr>
+          <tr><th scope="row">Equipment wear</th><td>1,600–1,700 MDL</td></tr>
+        </tbody>
+        <tfoot>
+          <tr><th scope="row">Theoretical total</th><td>≈ 7,700 MDL</td></tr>
+        </tfoot>
+      </table>
+    </section>
+  </main>
+  <footer class="subsol">
+    <div>
+      <p class="subsol-titlu">Andrei Tarkovsky Films</p>
+      <p>A student information project about the films of Andrei Tarkovsky.</p>
+    </div>
+    <nav aria-label="Footer">
+      <a href="../index.html">Home</a>
+      <a href="films.html">Films</a>
+    </nav>
+    <p class="subsol-drepturi">© <span id="anul-curent">2026</span> Andrei Tarkovsky Films</p>
+  </footer>
+  <button class="sus" id="sus" type="button" aria-label="Back to top">↑</button>
+  <div class="notificare" id="notificare" role="status" aria-live="polite"></div>
+  <script src="../js/main.js"></script>
+</body>
+</html>
